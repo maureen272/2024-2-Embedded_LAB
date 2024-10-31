@@ -1,0 +1,75 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.22.1.15669/W32 for ARM       02/Oct/2024  18:52:37
+# Copyright 1999-2018 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\user\main.c
+#    Command line =  
+#        -f C:\Users\pnu7\AppData\Local\Temp\EW8749.tmp
+#        (C:\Users\pnu7\Documents\IAR_EW_project\project_test\user\main.c -D
+#        USE_STDPERIPH_DRIVER -D STM32F10X_CL -lC
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\Debug\List -o
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\Debug\Obj --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0\arm\INC\c\DLib_Config_Normal.h" -I
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\libraries\CMSIS\DeviceSupport\
+#        -I
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\libraries\CMSIS\DeviceSupport\Startup\
+#        -I
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\libraries\STM32F10x_StdPeriph_Driver_v3.5\inc\
+#        -I
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\libraries\STM32F10x_StdPeriph_Driver_v3.5\src\
+#        -I C:\Users\pnu7\Documents\IAR_EW_project\project_test\user\ -I
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\user\inc\ -Ol -I
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0\arm\CMSIS\Core\Include\" -I "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench 8.0\arm\CMSIS\DSP\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\Debug\List\main.lst
+#    Object file  =  
+#        C:\Users\pnu7\Documents\IAR_EW_project\project_test\Debug\Obj\main.o
+#
+###############################################################################
+
+C:\Users\pnu7\Documents\IAR_EW_project\project_test\user\main.c
+      1          #include "stm32f10x.h"
+      2          
+
+   \                                 In section .text, align 2, keep-with-next
+      3          int main(void){
+      4            while(1){
+   \                     main: (+1)
+   \                     ??main_0: (+1)
+   \   00000000   0xE7FE             B.N      ??main_0
+      5            }
+      6            return 0;
+                   ^
+Warning[Pe111]: statement is unreachable
+      7          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   main
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  main
+
+ 
+ 2 bytes in section .text
+ 
+ 2 bytes of CODE memory
+
+Errors: none
+Warnings: 1
